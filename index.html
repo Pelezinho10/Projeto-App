@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inatel Organiza</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+<header>Inatel Acadêmico</header>
+
+<div class="sidebar" id="menuLateral">
+    <div class="perfil">
+        <h3 id="nomePerfil">Aluno</h3>
+        <p id="cursoPerfil">email@inatel.br</p>
+    </div>
+
+    <h4>Mensagens Acadêmicas</h4>
+    <ul><li onclick="alerta()">Avisos</li></ul>
+
+    <h4>Aproveitamento Escolar</h4>
+    <ul>
+        <li onclick="alerta()">Notas</li>
+        <li onclick="alerta()">Frequência</li>
+        <li onclick="alerta()">Material Didático</li>
+        <li onclick="alerta()">Plano de Ensino</li>
+        <li onclick="alerta()">Histórico Escolar</li>
+        <li onclick="alerta()">Coeficiente Acadêmico</li>
+    </ul>
+
+    <h4>Atividades Complementares</h4>
+    <ul>
+        <li onclick="alerta()">Avaliações</li>
+        <li onclick="alerta()">Frequência</li>
+        <li onclick="alerta()">Atividades Eletivas</li>
+        <li onclick="alerta()">Atividades Obrigatórias</li>
+    </ul>
+
+    <h4>Calendários e Horários</h4>
+    <ul>
+        <li onclick="alerta()">Calendário Acadêmico</li>
+        <li onclick="alerta()">Eventos Inatel</li>
+        <li onclick="alerta()">Provas</li>
+        <li onclick="alerta()">Reposições</li>
+        <li onclick="alerta()">Horários de Aula</li>
+        <li onclick="alerta()">Cronograma de Aula</li>
+        <li onclick="alerta()">Horários de Atedendimento Monitores</li>
+    </ul>
+
+    <h4>Financeiro</h4>
+    <ul><li onclick="alerta()">Consulta Lançamentos Tesouraria</li></ul>
+
+    <h4>Outras Opções</h4>
+    <ul>
+        <li onclick="alerta()">Consulta de Pedidos</li>
+        <li onclick="alerta()">Avaliação Docente</li>
+        <li onclick="alerta()">Pesquisa Institucional</li>
+        <li onclick="alerta()">Central de Cópias</li>
+        <li onclick="alerta()">Requerimentos</li>
+        <li onclick="alerta()">Configurações</li>
+        <li onclick="sair()">Sair</li>
+    </ul>
+</div>
+
+<div class="content" id="telaPrincipal">
+    <div class="main-content" id="avisos">
+        <h2>Avisos</h2>
+        <div id="mensagemAviso">
+            Não tem avisos no momento.
+        </div>
+    </div>
+
+    <div class="main-content" id="organizador">
+        <h2>Inatel Organiza</h2>
+        <input type="text" id="tipo" placeholder="Tipo (Prova, Aula, etc)">
+        <input type="date" id="data">
+        <input type="text" id="horario" placeholder="Horário (Opcional)">
+        <input type="text" id="descricao" placeholder="Descrição (Opcional)">
+        <button onclick="salvarAtividade()">Salvar Atividade</button>
+    </div>
+</div>
+
+<div class="login-container" id="login">
+    <h2>Entre com suas credenciais</h2>
+    <input type="text" id="nome" placeholder="Nome Completo">
+    <input type="text" id="curso" placeholder="Curso (ex: Engenharia de Software)">
+    <input type="text" id="matricula" placeholder="Matrícula">
+    <input type="password" id="senha" placeholder="Senha (6 números)">
+    <button onclick="fazerLogin()">Entrar</button>
+
+    <div class="contas-salvas" id="contasSalvas"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>     
